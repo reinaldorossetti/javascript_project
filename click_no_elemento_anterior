@@ -1,0 +1,8 @@
+# Dando um click no elemento anterior, pelo elemento seguinte passando o valor. 
+# Util quando você precisa dar um click em diversos campos.
+
+
+pacote = 'Pacote 200 MB';
+list = document.querySelector("td.tableText a[value='"+pacote+"']").getAttribute('name');
+number  = list.split('_');
+document.querySelector("input[value='"+number[number.length - 1]+"']").click();

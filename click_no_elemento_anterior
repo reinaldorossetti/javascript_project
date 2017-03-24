@@ -3,6 +3,6 @@
 
 
 pacote = 'Pacote 200 MB';
-list = document.querySelector("td.tableText a[value='"+pacote+"']").getAttribute('name');
-number  = list.split('_');
+name = document.querySelector("td.tableText a[value='"+pacote+"']").getAttribute('name');
+number  = name.split('_');
 document.querySelector("input[value='"+number[number.length - 1]+"']").click();
